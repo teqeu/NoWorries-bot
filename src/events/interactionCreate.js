@@ -4,7 +4,6 @@ export default {
   name: 'interactionCreate',
   async execute(interaction, client) {
 
-    // --- Slash commands ---
     if (interaction.isChatInputCommand()) {
       const command = client.commands.get(interaction.commandName);
       if (!command) return;
@@ -20,9 +19,7 @@ export default {
       return;
     }
 
-    // --- Modal submissions ---
 
-    // DM Role Modal
     if (interaction.isModalSubmit() && interaction.customId.startsWith('dmrole_modal_')) {
       const roleId = interaction.customId.replace('dmrole_modal_', '');
       const role = interaction.guild.roles.cache.get(roleId);
@@ -59,7 +56,6 @@ export default {
       return;
     }
 
-    // Custom Embed Modal
     if (interaction.isModalSubmit() && interaction.customId === 'custom_embed_modal') {
       await interaction.deferReply({ ephemeral: true });
 
@@ -73,7 +69,6 @@ export default {
         .setColor(color)
         .setTimestamp();
 
-      // Default to the channel the command was used in
       const channel = interaction.channel;
 
       try {
