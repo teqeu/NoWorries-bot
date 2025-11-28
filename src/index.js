@@ -16,7 +16,6 @@ const client = new Client({
 client.commands = new Collection();
 
 async function loadBot() {
-  // Load commands
   const commandsPath = path.join(process.cwd(), "src", "commands");
   const commandFiles = fs.readdirSync(commandsPath);
 
@@ -32,7 +31,6 @@ async function loadBot() {
     console.log(`[command] Loaded ${command.data.name}`);
   }
 
-  // Load events
   const eventsPath = path.join(process.cwd(), "src", "events");
   const eventFiles = fs.readdirSync(eventsPath);
 
