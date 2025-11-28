@@ -1,3 +1,9 @@
+
+[![GitHub stars](https://img.shields.io/github/stars/teqeu/NoWorries-bot?style=social)](https://github.com/teqeu/NoWorries-bot/stargazers)[![GitHub forks](https://img.shields.io/github/forks/teqeu/NoWorries-bot?style=social)](https://github.com/teqeu/NoWorries-bot/network/members)[![GitHub watchers](https://img.shields.io/github/watchers/teqeu/NoWorries-bot?style=social)](https://github.com/teqeu/NoWorries-bot/watchers)[![GitHub commits](https://img.shields.io/github/commit‑activity/y/teqeu/NoWorries-bot.svg)](https://github.com/teqeu/NoWorries-bot/commits)[![GitHub releases](https://img.shields.io/github/v/release/teqeu/NoWorries-bot)](https://github.com/teqeu/NoWorries-bot/releases)  
+
+
+
+
 #  NoWorries Bot
 
 A modern, open-source Discord bot built with JavaScript (ES Modules) and Discord.js v14. Lightweight, modular, and easy to extend.
@@ -100,13 +106,3 @@ Below, you can find the activity numbers for the presences.
 | USE_PRIVATE_THREADS        | `PermissionFlagsBits.UsePrivateThreads`       |
 
 ---
-
-
-
-
-
-[![GitHub stars](https://img.shields.io/github/stars/teqeu/NoWorries-bot?style=social)](https://github.com/teqeu/NoWorries-bot/stargazers)  
-[![GitHub forks](https://img.shields.io/github/forks/teqeu/NoWorries-bot?style=social)](https://github.com/teqeu/NoWorries-bot/network/members)  
-[![GitHub watchers](https://img.shields.io/github/watchers/teqeu/NoWorries-bot?style=social)](https://github.com/teqeu/NoWorries-bot/watchers)  
-[![GitHub commits](https://img.shields.io/github/commit‑activity/y/teqeu/NoWorries-bot.svg)](https://github.com/teqeu/NoWorries-bot/commits)  
-[![GitHub releases](https://img.shields.io/github/v/release/teqeu/NoWorries-bot)](https://github.com/teqeu/NoWorries-bot/releases)  
