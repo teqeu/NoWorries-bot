@@ -2,7 +2,6 @@ import fs from 'fs';
 import path from 'path';
 
 const filePath = path.join(process.cwd(), 'guildConfigs.json');
-
 let guildConfigs = {};
 if (fs.existsSync(filePath)) {
   guildConfigs = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
