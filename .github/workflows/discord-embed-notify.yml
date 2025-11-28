@@ -1,0 +1,44 @@
+name: Discord Embed Push Notification
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notify-discord:
+    runs-on: windows-latest
+    steps:
+      - name: Send Discord Embed
+        uses: Ilshidur/action-discord@v2
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          username: "GitHub Bot"
+          avatar_url: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+          embed: |
+            {
+              "title": "New Push to ${{ github.repository }}",
+              "url": "${{ github.event.head_commit.url }}",
+              "color": 5814783,
+              "author": {
+                "name": "${{ github.actor }}",
+                "url": "https://github.com/${{ github.actor }}"
+              },
+              "fields": [
+                {
+                  "name": "Commit Message",
+                  "value": "${{ github.event.head_commit.message }}",
+                  "inline": false
+                },
+                {
+                  "name": "Branch",
+                  "value": "${{ github.ref }}",
+                  "inline": true
+                }
+              ],
+              "footer": {
+                "text": "GitHub Actions Notification",
+                "icon_url": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+              },
+              "timestamp": "${{ github.event.head_commit.timestamp }}"
+            }
