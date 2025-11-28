@@ -7,7 +7,9 @@
     "start": "node ./src/index.js"
   },
   "dependencies": {
-    "discord.js": "^14.11.0",
+    "better-sqlite3": "^12.4.6",
+    "dayjs": "^1.11.19",
+    "discord.js": "^14.25.1",
     "dotenv": "^16.0.0"
   }
 }
