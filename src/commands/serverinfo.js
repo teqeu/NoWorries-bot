@@ -6,12 +6,10 @@ export default {
     .setDescription('Displays detailed information about this server.'),
 
   async execute(interaction) {
-    // Defer reply immediately
     await interaction.deferReply();
 
     const { guild } = interaction;
 
-    // Fetch members to get accurate counts
     await guild.members.fetch();
 
     const totalMembers = guild.memberCount;
@@ -40,7 +38,6 @@ export default {
       .setFooter({ text: `Server ID: ${guild.id}` })
       .setTimestamp();
 
-    // Edit deferred reply
     await interaction.editReply({ embeds: [embed] });
   }
 };

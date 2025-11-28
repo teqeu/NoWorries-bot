@@ -11,7 +11,7 @@ export default {
       .setColor('Purple')
       .setDescription('A self-hosted Discord multi-tool bot. Designed to provide moderation, logging, and utility tools per guild.')
       .addFields(
-        { name: 'GitHub', value: '[View on GitHub](https://github.com/teqeu/noworries)', inline: true },
+        { name: 'GitHub', value: '[View on GitHub](https://github.com/teqeu/NoWorries-bot)', inline: true },
         { name: 'Version', value: '1.0.0', inline: true },
         { name: 'Language', value: 'JavaScript (Discord.js v14)', inline: true }
       )
