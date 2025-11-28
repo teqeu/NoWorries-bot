@@ -10,7 +10,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Send Discord Embed
-        uses: Ilshidur/action-discord@v2
+        uses: Ilshidur/action-discord@master
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
           username: "GitHub Bot"
