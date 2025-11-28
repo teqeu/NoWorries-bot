@@ -8,7 +8,7 @@ export default {
       status: 'dnd', 
       activities: [
         {
-          name: 'we love noworriesBot',
+          name: 'we love Dust',
           type: 4 // customActivity = 4
         }
       ]
