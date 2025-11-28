@@ -1,0 +1,13 @@
+{
+  "name": "nwbot",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node ./src/index.js",
+    "start": "node ./src/index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.11.0",
+    "dotenv": "^16.0.0"
+  }
+}
