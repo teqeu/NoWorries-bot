@@ -2,3 +2,4 @@ node_modules/
 guildConfigs.json
 .env
 package-lock.json
+insights.sqlite
